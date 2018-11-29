@@ -14,7 +14,7 @@ end
 # - m: The minimum number of items rated by both users to take into account the correlation between them.
 for k in (seq 1 10)
     for m in (seq 1 10)
-        python movielesn_recommender_system.py --sets-dir "/data/data_mining/MovieLens/100K/ml-100k" \
+        python movielens_recommender_system.py --sets-dir "/data/data_mining/MovieLens/100K/ml-100k" \
         --neighbors $k \
         --min-ratings $m \
         --results "results/k$k/m$m.txt"
