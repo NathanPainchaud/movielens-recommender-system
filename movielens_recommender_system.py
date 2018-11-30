@@ -55,7 +55,7 @@ def _evaluate_predictions_with_rmse(prediction: Series, groundtruth: Series) -> 
 def test_user_based_prediction_model(sets_dir: str, knn: int, corr_min_periods: int, results: str):
     """
     Tests the user based collaborative filtering recommender system on each of the test sets, measuring the performance
-    of the system on each of them and in average.
+    of the system on each of them and on average.
 
     :param sets_dir: The path of the directory of the sets files.
     :param knn: The number of nearest neighbors to take into account when making recommendations.
